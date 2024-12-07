@@ -8,6 +8,7 @@
     <meta name="description"
         content="Bun venit pe site-ul meu de artist și proiectant 3D! Ofer servicii de modelare de personaje, crearea de texturi și materiale realiste, precum și proiecte personalizate pentru jocuri, animații și alte proiecte artistice. Descoperă portofoliul meu și vezi cum pot transforma ideile tale în realitate 3D, cu atenție la detalii și inovație la fiecare pas.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Nina Damian | Artist 3D</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,63 +17,162 @@
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
-    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <style>
+        body {
+            background-color: #edddd4;
+            font-family: "Work Sans", serif;
+        }
+
+        header {
+            background-color: #283d3b;
+        }
+
+        .navbar-nav .nav-link {
+            color: #edddd4;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #f1ebe8;
+        }
+
+        .nume {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .bg-verde {
+            background-color: rgba(40, 61, 59, 0.75);
+        }
+    </style>
 </head>
 
 <body>
 
     <header>
-        <nav class="flex mijloc">
-            <img src="logo-bej.png" alt="logo Nina Damian" class="logo">
-            <ul>
-                <li><a href="index.html">Despre mine</a></li>
-                <li><a href="servicii.html">Servicii</a></li>
-                <li><a href="proiecte.html">Proiectele mele</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div class="bg-image">
-        <h1>Despre mine</h1>
-        <div class="flex">
-            <img src="nina-no-bg.png" alt="Nina Damian, artist 3D ține o mapă în mână" class="nina">
-            <div>
-                <h2>Abilități</h2>
-                <ul>
-                    <li>Tehnici de texturare care conferă profunzime și personalitate fiecărui personaj.     </li>
-                    <li>Creare de structuri complexe care permit mișcări naturale.</li>
-                    <li>Modelare detaliată de la concepte stilizate până la designuri ultra-realiste</li>
-                    <li>Software Utilizat: Blender, ZBrush, Substance Painter, Maya.</li>
-                </ul>
-                <h2>Certificări</h2>
-                <div class="flex mijloc">
-                    <ol>
-                        <li>Adobe Certified Professional</li>
-                        <li>Maya International Designer</li>
-                        <li>Blender Advanced User</li>
-                    </ol>
-                    <a href="proiecte.html" class="buton centru">Cum arată proiectele mele?</a>
+        <!-- Meniu burghir -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <nav class="navbar bg-body-tertiary">
+                    <div class="container">
+                        <a class="navbar-brand" href="#">
+                            <img src="logo-bej.png" alt="Logo" width="30" height="24">
+                        </a>
+                    </div>
+                </nav>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" aria-current="page" href="#">Servicii</a>
+                        <a class="nav-link" href="#">Proiecte</a>
+                        <a class="nav-link" href="#">Contact</a>
+                    </div>
                 </div>
             </div>
+        </nav>
+
+        <!-- carusel -->
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                    aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                    aria-label="Slide 6"></button>
+
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="clienti/hanna.jpg" class="d-block w-100"
+                        alt="Hanna Iana, clientă a Ninei Damian, zâmbește">
+                    <div class="carousel-caption d-none d-md-block shadow p-3 mb-5 bg-body-tertiary rounded bg-verde">
+                        <p class="nume">Hanna Iana</p>
+                        <p>Un artist 3D excepțional! Modelele sale sunt detaliate și impresionante, iar fiecare proiect
+                            reflectă creativitatea și atenția la detalii. Recomand cu încredere!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="clienti/iancu.jpg" class="d-block w-100"
+                        alt="Iancu Marian, client al Ninei Damian, gânditor la calculator">
+                    <div class="carousel-caption d-none d-md-block shadow p-3 mb-5 bg-body-tertiary rounded bg-verde">
+                        <p class="nume">Iancu Marian</p>
+                        <p>Profesionalism de la început până la sfârșit! Renders-urile sunt spectaculoase, iar
+                            comunicarea pe parcursul proiectului a fost impecabilă. O colaborare perfectă!</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="clienti/miruna.jpg" class="d-block w-100"
+                        alt="Miruna Ionescu, clientă a Ninei Damian, serioasă">
+                    <div class="carousel-caption d-none d-md-block shadow p-3 mb-5 bg-body-tertiary rounded bg-verde">
+                        <p class="nume">Miruna Ionescu</p>
+                        <p>Am fost uimită de realismul creațiilor sale! Talentul său în modelare și texturare este de
+                            neegalat. Un adevărat expert în domeniu.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="clienti/miron.jpg" class="d-block w-100"
+                        alt="Miron Costin, client al Ninei Damian, cu brațele încrucișate">
+                    <div class="carousel-caption d-none d-md-block shadow p-3 mb-5 bg-body-tertiary rounded bg-verde">
+                        <p class="nume">Miron Costin</p>
+                        <p>Serviciile acestui artist 3D mi-au depășit așteptările! Mi-a transformat ideile în modele
+                            digitale uimitoare, cu o calitate peste standardele industriei.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="clienti/ramona.jpg" class="d-block w-100"
+                        alt="Ramona Naum, clientă a Ninei Damian, arată spre cameră cu degetul">
+                    <div class="carousel-caption d-none d-md-block shadow p-3 mb-5 bg-body-tertiary rounded bg-verde">
+                        <p class="nume">Ramona Naum</p>
+                        <p>Colaborarea cu acest artist a fost o experiență fantastică. Este creativă, punctuală și
+                            deschisă la feedback, ceea ce face tot procesul ușor și plăcut.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="clienti/neculai.jpg" class="d-block w-100"
+                        alt="Neculai Vasilache, client al Ninei Damian, gânditor">
+                    <div class="carousel-caption d-none d-md-block shadow p-3 mb-5 bg-body-tertiary rounded bg-verde">
+                        <p class="nume">Neculai Vasilache</p>
+                        <p>Un adevărat magician al artei 3D! Fiecare proiect este unic, bine gândit și executat la
+                            perfecțiune. Nu pot decât s-o recomand cu toată încrederea.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-    </div>
+
+    </header>
+
+
 
     <footer>
-        <nav class="flex egal">
 
-            <img src="logo-bej.png" alt="logo Nina Damian" class="logo">
-            <div class="flex">
-                <a href="https://www.instagram.com/" target="_blank"><img src="ig-bej.png" alt="logo Instagram"
-                        class="icon"></a>
-                <a href="https://www.gmail.com/" target="_blank"><img src="mail-bej.png" alt="logo Mail"
-                        class="icon"></a>
-                <a href="https://www.pinterest.com/" target="_blank"><img src="pint-bej.png" alt="logo Pinterest"
-                        class="icon"></a>
-            </div>
-            <p class="drepturi">© [2024] Nina Damian. Toate drepturile rezervate.</p>
-        </nav>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
