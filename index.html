@@ -61,6 +61,10 @@
         .carousel-caption p {
             color: #edddd4;
         }
+
+        .icon {
+            width: 50px;
+        }
     </style>
 </head>
 
@@ -72,7 +76,7 @@
             <div class="container-fluid">
                 <nav class="navbar bg-body-tertiary">
                     <div class="container">
-                        <a class="navbar-brand" href="#">
+                        <a class="navbar-brand" aria-current="page" href="#">
                             <img src="logo-bej.png" alt="Logo" width="50">
                         </a>
                     </div>
@@ -84,9 +88,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link" aria-current="page" href="#">Servicii</a>
-                        <a class="nav-link" href="#">Proiecte</a>
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#despre">Despre</a>
+                        <a class="nav-link" href="#servicii">Servicii</a>
+                        <a class="nav-link" href="#proiecte">Proiecte</a>
+                        <a class="nav-link" href="#contact">Contact</a>
                     </div>
                 </div>
             </div>
@@ -179,7 +184,70 @@
 
     </header>
 
+    <!-- Despre mine-->
+    <div class="container py-4">
+        <div class="row">
+            <h2 class="py-4" id="despre">Nina Damian | Designer și Artist 3D</h2>
+        </div>
+        <div class="container-fluid d-flex align-items-stretch">
+        <div class="row">
+            <div class="col-lg-3 col-md-5 col-12 align-self-stretch "> <!-- de ce nu merge align stretch sa fac inaltimea cat textul?-->
+                <img src="nina-no-bg.png" alt="Nina Damian, designer 3D, ține o mapă în mână">
+            </div>
+            <div class="col ">
+                <div class="row">
+                    <h3>Educație</h3>
+                    <p>Am absolvit KEA – Copenhagen School of Design and Technology, unde mi-am construit baza teoretică
+                        și practică în arta digitală. De-a lungul anilor, am participat la cursuri și workshopuri
+                        recunoscute la nivel internațional pentru a-mi perfecționa abilitățile și a înțelege mai bine
+                        procesul creativ din spatele designului 3D.</p>
+                </div>
+                <div class="row">
+                    <h3>Background professional</h3>
+                    <p>Am avut șansa de a colabora cu diverse branduri și proiecte din industria designului și artei
+                        digitale, de la agenții de publicitate la studiouri de jocuri și inițiative culturale.
+                        Experiențele mele includ dezvoltarea de identități vizuale, crearea de modele 3D complexe și
+                        participarea la proiecte care mi-au pus la încercare creativitatea și expertiza tehnică. Fiecare
+                        colaborare mi-a oferit oportunitatea de a transforma idei în creații vizuale care inspiră și
+                        transmit mesaje puternice.</p>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h3>Abilități</h3>
+                        <ul>
+                            <li>Modelare 3D: Creez modele detaliate și realiste cu ajutorul Blender, Maya și 3ds Max.</li>
+                            <li>Randare și Post-Procesare: Mă bazez pe V-Ray și Adobe After Effects pentru a adăuga finisaje profesionale proiectelor mele.</li>
+                            <li>Storyboarding și Animație: Îmi place să transform poveștile în animații captivante care prind viață.</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3>Certificări</h3>
+                        <ul>
+                            <li>Autodesk Certified Professional – pentru Maya și 3ds Max.</li>
+                            <li>Adobe Certified Expert – în Photoshop și After Effects.</li>
+                            <li>ZBrush Certified Professional</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
 
+<!-- Servicii -->
+ <div class="container py-4">
+    <h2 id="servicii">Servicii</h2>
+ </div>
+
+ <!-- Proiecte -->
+ <div class="container py-4">
+    <h2 id="proiecte">Proiectele mele</h2>
+ </div>
+
+ <!-- Contact -->
+ <div class="container py-4">
+    <h2 id="contact">Contact</h2>
+ </div>
 
     <footer>
         <div class="container">
@@ -188,16 +256,17 @@
                     <a class="navbar-brand" href="#">
                         <img src="logo-bej.png" alt="Logo" width="50">
                     </a>
-                    <p class="copy ps-4">© [2024] Nina Damian. Toate drepturile rezervate.</p>
+                    <p class="copy ps-4 align-self-center">© [2024] Nina Damian.</p>
                 </div>
 
                 <div class="col-lg-4 col-12 pb-3">
                     <div class="d-flex justify-content-between">
-                        <a href="https://www.instagram.com/" target="_blank"><img src="ig-bej.png"
-                                alt="logo Instagram"></a>
-                        <a href="https://www.gmail.com/" target="_blank"><img src="mail-bej.png" alt="logo Mail"></a>
+                        <a href="https://www.instagram.com/" target="_blank"><img src="ig-bej.png" alt="logo Instagram"
+                                class="icon"></a>
+                        <a href="https://www.gmail.com/" target="_blank"><img src="mail-bej.png" alt="logo Mail"
+                                class="icon"></a>
                         <a href="https://www.pinterest.com/" target="_blank"><img src="pint-bej.png"
-                                alt="logo Pinterest"></a>
+                                alt="logo Pinterest" class="icon"></a>
                     </div>
                 </div>
 
