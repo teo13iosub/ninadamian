@@ -70,40 +70,63 @@
             color: #ffffff;
         }
 
-        .oferta {
+        .font {
+            font-size: 20px;
+            font-weight: 550;
+        }
+
+        .nina {
+            height: 60vh;
+            border-radius: 20px;
+            outline: 3px solid #283d3b;
+        }
+
+        h1 {
+            color: #edddd4;
             font-size: 25px;
+            font-weight: 500;
+        }
+
+        .proiect {
+            width: 100%;
         }
     </style>
 </head>
 
 <body>
-    <!-- De ce nu mai e sticky deodata la sectiuni/-->
-    <header>
+
+    <!-- De ce nu mai e sticky deodata la sectiuni/ si de pus acasa pe logo-->
+    <header id="carusel">
         <!-- Meniu burghir -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top verde">
-            <div class="container-fluid">
-                <nav class="navbar bg-body-tertiary">
-                    <div class="container">
-                        <a class="navbar-brand" aria-current="page" href="#">
-                            <img src="logo-bej.png" alt="Logo" width="50">
-                        </a>
-                    </div>
-                </nav>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link" href="#despre">Despre</a>
-                        <a class="nav-link" href="#servicii">Servicii</a>
-                        <a class="nav-link" href="#proiecte">Proiecte</a>
-                        <a class="nav-link" href="#contact">Contact</a>
+        <div class="sticky-top fixed-top">
+            <nav class="navbar navbar-expand-lg verde">
+                <div class="container-fluid">
+                    <nav class="navbar bg-body-tertiary">
+                        <div class="container-fluid d-flex ">
+                            <a class="navbar-brand" href="#carusel">
+                                <img src="logo-bej.png" alt="Logo" class="icon d-inline-block">
+                            </a>
+                            <h1 class="pe-5">
+                                Nina Damian</h1>
+                        </div>
+
+                    </nav>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link" href="#despre">Despre</a>
+                            <a class="nav-link" href="#servicii">Servicii</a>
+                            <a class="nav-link" href="#proiecte">Proiecte</a>
+                            <a class="nav-link" href="#faq">faq</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
 
         <!-- carusel -->
         <div id="carouselExampleCaptions" class="carousel slide">
@@ -180,7 +203,8 @@
             </div>
             <button class="carousel-control-prev " type="button" data-bs-target="#carouselExampleCaptions"
                 data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span> <!-- cum fac butoanele verzi? -->
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <!-- nu e nevoie de butoane verzi -->
                 <span class="visually-hidden ">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
@@ -193,56 +217,52 @@
     </header>
 
     <!-- Despre mine-->
-    <div class="container py-4">
+    <div class="container pt-4">
         <div class="row">
             <h2 class="py-4" id="despre">Nina Damian | Designer și Artist 3D</h2>
         </div>
-        <div class="container-fluid d-flex align-items-stretch">
-            <div class="row">
-                <div class="col-lg-3 col-md-5 col-12 align-self-stretch ">
-                    <!-- de ce nu merge align stretch sa fac inaltimea cat textul?-->
-                    <img src="nina-no-bg.png" alt="Nina Damian, designer 3D, ține o mapă în mână">
+        <div class="container-fluid d-flex">
+            <div class="row align-items-center">
+                <div class="col-sm-12 col-md-12 col-lg-4 pb-4">
+                    <img src="nina.jpg" class="nina" alt="Nina Damian, designer 3D, ține o mapă în mână">
                 </div>
-                <div class="col ">
-                    <div class="row">
-                        <h3>Educație</h3>
-                        <p>Am absolvit KEA – Copenhagen School of Design and Technology, unde mi-am construit baza
-                            teoretică
-                            și practică în arta digitală. De-a lungul anilor, am participat la cursuri și workshopuri
-                            recunoscute la nivel internațional pentru a-mi perfecționa abilitățile și a înțelege mai
-                            bine
-                            procesul creativ din spatele designului 3D.</p>
+                <div class="col-sm-12 col-md-12 col-lg-8">
+                    <h3>Educație</h3>
+                    <p>Am absolvit KEA – Copenhagen School of Design and Technology, unde mi-am construit baza
+                        teoretică
+                        și practică în arta digitală. De-a lungul anilor, am participat la cursuri și workshopuri
+                        recunoscute la nivel internațional pentru a-mi perfecționa abilitățile și a înțelege mai
+                        bine
+                        procesul creativ din spatele designului 3D.</p>
+
+                    <h3>Background professional</h3>
+                    <p>Am avut șansa de a colabora cu diverse branduri și proiecte din industria designului și artei
+                        digitale, de la agenții de publicitate la studiouri de jocuri și inițiative culturale.
+                        Experiențele mele includ dezvoltarea de identități vizuale, crearea de modele 3D complexe și
+                        participarea la proiecte care mi-au pus la încercare creativitatea și expertiza tehnică.
+                        Fiecare
+                        colaborare mi-a oferit oportunitatea de a transforma idei în creații vizuale care inspiră și
+                        transmit mesaje puternice.</p>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+                        <h3>Abilități</h3>
+                        <ul>
+                            <li>Modelare 3D: Creez modele detaliate și realiste cu ajutorul Blender, Maya și 3ds
+                                Max.</li>
+                            <li>Randare și Post-Procesare: Mă bazez pe V-Ray și Adobe After Effects pentru a adăuga
+                                finisaje profesionale proiectelor mele.</li>
+                            <li>Storyboarding și Animație: Îmi place să transform poveștile în animații captivante
+                                care prind viață.</li>
+                        </ul>
                     </div>
-                    <div class="row">
-                        <h3>Background professional</h3>
-                        <p>Am avut șansa de a colabora cu diverse branduri și proiecte din industria designului și artei
-                            digitale, de la agenții de publicitate la studiouri de jocuri și inițiative culturale.
-                            Experiențele mele includ dezvoltarea de identități vizuale, crearea de modele 3D complexe și
-                            participarea la proiecte care mi-au pus la încercare creativitatea și expertiza tehnică.
-                            Fiecare
-                            colaborare mi-a oferit oportunitatea de a transforma idei în creații vizuale care inspiră și
-                            transmit mesaje puternice.</p>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <h3>Abilități</h3>
-                            <ul>
-                                <li>Modelare 3D: Creez modele detaliate și realiste cu ajutorul Blender, Maya și 3ds
-                                    Max.</li>
-                                <li>Randare și Post-Procesare: Mă bazez pe V-Ray și Adobe After Effects pentru a adăuga
-                                    finisaje profesionale proiectelor mele.</li>
-                                <li>Storyboarding și Animație: Îmi place să transform poveștile în animații captivante
-                                    care prind viață.</li>
-                            </ul>
-                        </div>
-                        <div class="col">
-                            <h3>Certificări</h3>
-                            <ul>
-                                <li>Autodesk Certified Professional – pentru Maya și 3ds Max.</li>
-                                <li>Adobe Certified Expert – în Photoshop și After Effects.</li>
-                                <li>ZBrush Certified Professional</li>
-                            </ul>
-                        </div>
+                    <div class="col-sm-12 col-md-12 col-lg-6">
+                        <h3>Certificări</h3>
+                        <ul>
+                            <li>Autodesk Certified Professional – pentru Maya și 3ds Max.</li>
+                            <li>Adobe Certified Expert – în Photoshop și After Effects.</li>
+                            <li>ZBrush Certified Professional</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -250,100 +270,228 @@
     </div>
 
     <!-- Servicii -->
-    <div class="container py-4">
+    <div class="container pt-3">
         <h2 id="servicii">Servicii</h2>
         <div class="container-fluid  pt-4">
             <div class="row d-flex">
-                <div class="col-lg-4 col-md-4 col-12">
+                <div class="col-lg-4 col-md-4 col-12 mb-3">
                     <div class="card">
                         <img src="soarece.jpg" class="card-img-top" alt="șoarece futuristic 3D">
                         <div class="card-body p-4">
-                            <h5 class="card-title">Modelare personaje</h5>
+                            <p class="font">Modelare personaje</p>
                             <p class="card-text">Ofer servicii de modelare 3D pentru personaje detaliate și expresive,
                                 adaptate oricărui stil artistic. Fie că aveți nevoie de
                                 personaje pentru jocuri, animații sau proiecte artistice, mă asigur că fiecare detaliu
                                 contribuie la personalitatea și unicitatea creației.</p>
                             <p class="btn verde alb">500 lei</p>
                         </div>
-                    </div></div>
-                    <div class="col-lg-4 col-md-4 col-12">
-                        <div class="card">
-                            <img src="planeta.jpg" class="card-img-top" alt="planeta Pământ 3D">
-                            <div class="card-body p-4">
-                                <h5 class="card-title">Texturi și materiale</h5>
-                                <p class="card-text">Realizez texturi și materiale de înaltă calitate, care adaugă
-                                    profunzime și realism modelelor 3D. Fiecare suprafață este tratată cu atenție pentru
-                                    a reda cu fidelitate detaliile de care aveți nevoie, de la finisaje mate și aspre
-                                    până la materiale lucioase și complexe, orice este posibil.</p>
-                                <div class="d-flex justify-content-around">
-                                    <p class="btn verde alb">480 lei</p>
-                                    <p class="oferta"><span class="badge text-bg-success">Ofertă specială</span><p>
-                                </div>
-                            </div>
-                        </div></div>
-                        <div class="col-lg-4 col-md-4 col-12">
-                            <div class="card">
-                                <img src="work.jpg" class="card-img-top" alt="creion pe o tabletă grafică">
-                                <div class="card-body p-4">
-                                    <h5 class="card-title">Proiecte personalizate</h5>
-                                    <p class="card-text">Ofer soluții de design 3D personalizate, adaptate nevoilor și
-                                        cerințelor unice ale fiecărui client. Fie că este vorba de prototipuri, concept
-                                        art sau modele pentru arhitectură, garantez inovație și execuție
-                                        impecabilă pentru rezultate care să depășească așteptările.</p>
-                                    <p class="btn verde alb">1000-1500 lei</p>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
-            </div>
-
-            <!-- Proiecte -->
-            <div class="container py-4">
-                <h2 id="proiecte">Proiectele mele</h2>
-            </div>
-
-            <!-- Contact -->
-            <div class="container py-4">
-                <h2 id="contact">Contact</h2>
-            </div>
-
-            <footer>
-                <div class="container">
-                    <div class="row justify-content-between">
-                        <div class="col-lg-4 col-12 pb-3 d-flex">
-                            <a class="navbar-brand" href="#">
-                                <img src="logo-bej.png" alt="Logo" width="50">
-                            </a>
-                            <p class="copy ps-4 align-self-center">© [2024] Nina Damian.</p>
-                        </div>
-
-                        <div class="col-lg-4 col-12 pb-3">
+                <div class="col-lg-4 col-md-4 col-12 mb-3">
+                    <div class="card">
+                        <img src="planeta.jpg" class="card-img-top" alt="planeta Pământ 3D">
+                        <div class="card-body p-4">
+                            <p class="font">Texturi și materiale</p>
+                            <p class="card-text">Realizez texturi și materiale de înaltă calitate, care adaugă
+                                profunzime și realism modelelor 3D. Fiecare suprafață este tratată cu atenție pentru
+                                a reda cu fidelitate detaliile de care aveți nevoie, de la finisaje mate și aspre
+                                până la materiale lucioase și complexe, orice este posibil.</p>
                             <div class="d-flex justify-content-around">
-                                <a href="https://www.instagram.com/" target="_blank"><img src="ig-bej.png"
-                                        alt="logo Instagram" class="icon"></a>
-                                <a href="https://www.gmail.com/" target="_blank"><img src="mail-bej.png" alt="logo Mail"
-                                        class="icon"></a>
-                                <a href="https://www.pinterest.com/" target="_blank"><img src="pint-bej.png"
-                                        alt="logo Pinterest" class="icon"></a>
+                                <p class="btn verde alb">480 lei</p>
+                                <p><span class="badge text-bg-success font p-2">Nou</span> <!-- urat pe ecrane medii -->
+                                <p>
                             </div>
-                        </div>
-
-                        <div class="col-lg-4 col-12 text-end pb-3">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2733.1687815920127!2d23.5783981!3d46.76156949999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490e809171d439%3A0xbf81fdd421ec007b!2sOSUBB%20Cluj-Napoca!5e0!3m2!1sro!2sro!4v1733602771010!5m2!1sro!2sro"
-                                height="50" width="250" style="border:0;" allowfullscreen="" loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-4 col-md-4 col-12 mb-3">
+                    <div class="card">
+                        <img src="work.jpg" class="card-img-top" alt="creion pe o tabletă grafică">
+                        <div class="card-body p-4">
+                            <p class="font">Proiecte personalizate</p>
+                            <p class="card-text">Ofer soluții de design 3D personalizate, adaptate nevoilor și
+                                cerințelor unice ale fiecărui client. Fie că este vorba de prototipuri, concept
+                                art sau modele pentru arhitectură, garantez inovație și execuție
+                                impecabilă pentru rezultate care să depășească așteptările.</p>
+                            <p class="btn verde alb">1000-1500 lei</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- De ce se deschid toate odată-->
+    <!-- Proiecte -->
+    <div class="container pt-3">
+        <h2 id="proiecte">Proiectele mele</h2>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 p-3">
+                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    <img src="vulpe.jpg" alt="vulpe drăguță proiectată 3D" class="proiect">
+                </button>
+
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <p>Realizată pentru firma WildVision Media, vulpea este element central într-o animație
+                            educațională
+                            despre conservarea faunei sălbatice.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 p-3">
+                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    <img src="veverita.jpg" alt="veveriță cu alune în lăbuțe proiectată 3D" class="proiect">
+                </button>
+
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <p>Realizată pentru firma EcoTreescape, veverița 3D servește ca mascotă pentru promovarea unei
+                            campanii
+                            de reîmpădurire în România.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 p-3">
+                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    <img src="hoata.jpg" alt="veveriță mânăncă alune dintr-un săculeț" class="proiect">
+                </button>
+
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <p>Creată pentru firma Nature Goods, veverița 3D este surprinsă într-o postură naturală,
+                            ronțăind alune, și utilizată pe ambalajele unei linii de gustări
+                            sănătoase.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 p-3">
+                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    <img src="motan.jpg" alt="motan ce pândește printre frunze" class="proiect">
+                </button>
+
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <p>Proiectat pentru compania StealthVision, motanul 3D este folosit ca simbol al vigilenței în
+                            campania publicitară a unui nou sistem de securitate
+                            inteligent.</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        </footer>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 p-3">
+                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    <img src="casuta.jpg" alt="căsuța zânelor proiectată 3D" class="proiect">
+                </button>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-            crossorigin="anonymous"></script>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <p>Creată pentru MagicSpark Interiors, căsuța 3D este un prototip pentru o linie de decorațiuni
+                            interioare inspirate de povești cu zâne.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 p-3">
+                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    <img src="broasca.jpg" alt="broască de copac proiectată 3D" class="proiect">
+                </button>
+
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <p>Proiectată pentru GreenPond Solutions, broasca 3D ilustrează biodiversitatea din proiectele
+                            de
+                            revitalizare a ecosistemelor acvatice.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 p-3">
+                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    <img src="pisi.jpg" alt="pisică printre frunze proiectată 3D" class="proiect">
+                </button>
+
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <p>Creată pentru compania CatLounge, modelul 3D este utilizat în campanii
+                            publicitare
+                            pentru o linie premium de mobilier pentru pisici.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 p-3">
+                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    <img src="iepure.jpg" alt="iepure în kimono proiectat 3D" class="proiect">
+                </button>
+
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        <p>Proiect realizat pentru BunnyHop Toys, modelul 3D al iepurelui este folosit în producția unei
+                            serii de jucării interactive și desene animate pentru copii.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Contact -->
+    <div class="container pt-3">
+        <h2 id="faq">FAQ</h2>
+
+
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-4 col-12 pb-3 d-flex">
+                    <a class="navbar-brand" href="#">
+                        <img src="logo-bej.png" alt="Logo" class="icon">
+                    </a>
+                    <p class="copy ps-4 align-self-center">© [2024] Nina Damian.</p>
+                </div>
+
+                <div class="col-lg-4 col-12 pb-3">
+                    <div class="d-flex justify-content-around">
+                        <a href="https://www.instagram.com/" target="_blank"><img src="ig-bej.png" alt="logo Instagram"
+                                class="icon"></a>
+                        <a href="https://www.gmail.com/" target="_blank"><img src="mail-bej.png" alt="logo Mail"
+                                class="icon"></a>
+                        <a href="https://www.pinterest.com/" target="_blank"><img src="pint-bej.png"
+                                alt="logo Pinterest" class="icon"></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-12 text-end pb-3">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2733.1687815920127!2d23.5783981!3d46.76156949999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490e809171d439%3A0xbf81fdd421ec007b!2sOSUBB%20Cluj-Napoca!5e0!3m2!1sro!2sro!4v1733602771010!5m2!1sro!2sro"
+                        height="50" width="250" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
